@@ -6,6 +6,9 @@ describe('My first test', () => {
     it('url should include google', () => {
        cy.url().should('include', 'google.com')
     })
+    it('should wait for 3 seconds', () => {
+        cy.wait(3000);
+     })
 })
 
 
