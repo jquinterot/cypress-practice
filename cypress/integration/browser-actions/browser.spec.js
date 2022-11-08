@@ -10,4 +10,10 @@ describe('Browser Actions', () => {
         cy.get('a').contains('Travel').click()
         cy.get('h1').contains('Travel')
     })
+
+    
+    it('should click on Travel category', ()=> {
+        cy.get('.product_pod').its('length').should('eq', 11)
+
+    })
 })
